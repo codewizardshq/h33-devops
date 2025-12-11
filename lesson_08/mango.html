@@ -4,21 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mango</title>
-    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fff1cc, #ffd591);
+            color: #333;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            animation: fadeIn 0.9s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .title {
+            font-size: 38px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+            color: #e67a00;
+        }
+
+        .tagline {
+            text-align: center;
+            font-size: 18px;
+            margin-top: -10px;
+            margin-bottom: 25px;
+            color: #a35400;
+            opacity: 0.85;
+        }
+
+        .description {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        img {
+            width: 100%;
+            max-width: 340px;
+            display: block;
+            margin: 25px auto;
+            border-radius: 14px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .fact-box {
+            background: #fff7e0;
+            border-left: 6px solid #ffa31a;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+        }
+
+        button {
+            background-color: #ffa64d;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: 0.25s;
+            font-weight: bold;
+            display: block;
+            margin: 20px auto 0 auto;
+        }
+
+        button:hover {
+            background-color: #ff8c1a;
+            transform: scale(1.05);
+        }
+
+        a { text-decoration: none; }
+    </style>
 </head>
+
 <body>
-    
-    <!-- I think there is something wrong in this part --> 
-
     <div class="container">
-        <h1 class="title"Mango</h1>
-        <dif cluss="description">
-            Our mango ice cream is very fresh tasting and has a nice, appealing orange color.
-            We use fresh mangos for our mango ice cream.
+        <h1 class="title">Mango</h1>
+        <p class="tagline">MIGHT be a tropical fruit</p>
 
-    <!-- --------------------------------------------- --> 
+        <div class="description">
+            Mango is a tasty fruit known for its sweet and creamy flavor along with its bright color.
+            <br><br>
+            mango ice cream usually takes on its yellow and orange color which looks pretty sick.
+            <div class="fact-box">
+                <strong>mildly fun fact:</strong> Mangoes have been cultivated for over 4000 years and symbolize love in some cultures (weird i know).
+            </div>
 
-            Here are some of the countries where lemons are harvested:
+            These are the top mango-producing countries:
             <ul>
                 <li>India</li>
                 <li>Indonesia</li>
@@ -26,17 +120,13 @@
                 <li>Mexico</li>
                 <li>Pakistan</li>
             </ul>
-            
-            <img src="">
-               
-            <a href="index.html"><button type="button">Back</button></a>
 
+            <img src="img/mango.jpg" alt="Mango image">
+
+            <a href="index.html">
+                <button type="button">Back</button>
+            </a>
         </div>
     </div>
-
 </body>
-</html> 
-
- 
-
-
+</html>
